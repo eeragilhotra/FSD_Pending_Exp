@@ -1,0 +1,50 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  /* Centering logic using flexbox on the whole body */
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Isse App container poori width lega aur andar ka content center hoga */
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+/* MUI components ke inputs aur text ko dark mode me readable banane ke liye */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/* Global Centering for Typography and Containers */
+h1, h2, h3 {
+  text-align: center;
+  width: 100%;
+}
+
+form, .MuiStack-root {
+  margin: 0 auto; /* Form elements ko center lane ke liye */
+  align-items: center;
+}
